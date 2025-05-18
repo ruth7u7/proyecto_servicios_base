@@ -1,5 +1,23 @@
+/* Estilos globales */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -26,6 +44,214 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.main-content {
+  flex: 1;
+  padding-top: 1rem;
+}
+
+/* Estilos para enlaces */
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Estilos para botones */
+button {
+  cursor: pointer;
+}
+
+/* Estilos para inputs */
+input, select, textarea {
+  font-family: inherit;
+}
+
+/* Estilos para contenedores */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Estilos para modo oscuro */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .header {
+  background-color: #1e1e1e;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .logo h1 {
+  color: #f8f9fa;
+}
+
+.dark-mode .search-input {
+  background-color: #2d2d2d;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+.dark-mode .search-input:focus {
+  background-color: #333;
+  border-color: #0d6efd;
+}
+
+.dark-mode .search-button {
+  color: #adb5bd;
+}
+
+.dark-mode .work-with-us-link-header {
+  color: #e0e0e0;
+  background-color: #2d2d2d;
+}
+
+.dark-mode .work-with-us-link-header:hover {
+  background-color: #3d3d3d;
+}
+
+.dark-mode .connect-button {
+  background-color: #0d6efd;
+}
+
+.dark-mode .connect-button:hover {
+  background-color: #0b5ed7;
+}
+
+.dark-mode .connect-button.connected {
+  background-color: #198754;
+}
+
+.dark-mode .service-card {
+  background-color: #2d2d2d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .service-title {
+  color: #e0e0e0;
+}
+
+.dark-mode .service-icon {
+  color: #0d6efd;
+}
+
+.dark-mode .providers-section h3,
+.dark-mode .services-section h3 {
+  color: #f8f9fa;
+}
+
+.dark-mode .provider-card {
+  background-color: #2d2d2d;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .provider-info h3,
+.dark-mode .provider-info p {
+  color: #e0e0e0;
+}
+
+.dark-mode .wallet-info-section {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .wallet-info-section h3,
+.dark-mode .wallet-info-section h4 {
+  color: #f8f9fa;
+}
+
+.dark-mode .wallet-info-text p {
+  color: #adb5bd;
+}
+
+.dark-mode .wallet-step-home {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .wallet-step-home h5 {
+  color: #f8f9fa;
+}
+
+.dark-mode .wallet-step-home p {
+  color: #adb5bd;
+}
+
+.dark-mode .wallet-cta {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .wallet-link {
+  background-color: #0d6efd;
+}
+
+.dark-mode .user-menu {
+  background-color: #2d2d2d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .user-menu-item:hover {
+  background-color: #3d3d3d;
+}
+
+.dark-mode .profile-modal {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .profile-modal h2 {
+  color: #f8f9fa;
+}
+
+.dark-mode .profile-field label {
+  color: #adb5bd;
+}
+
+.dark-mode .profile-field p {
+  color: #e0e0e0;
+}
+
+.dark-mode .profile-field input {
+  background-color: #2d2d2d;
+  border-color: #444;
+  color: #e0e0e0;
+}
+
+.dark-mode .wallet-address {
+  background-color: #2d2d2d;
+}
+
+.dark-mode .profile-image-placeholder {
+  background-color: #2d2d2d;
+  color: #adb5bd;
+}
+
+.dark-mode .edit-button, 
+.dark-mode .save-button {
+  background-color: #0d6efd;
+}
+
+.dark-mode .cancel-button {
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+/* Estilos para el footer */
+.footer {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-top: 1px solid #dee2e6;
+}
+
+.dark-mode .footer {
+  background-color: #1e1e1e;
+  border-top-color: #444;
 }
 
 @keyframes App-logo-spin {

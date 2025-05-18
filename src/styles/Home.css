@@ -1,0 +1,369 @@
+.home-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Estilos para la sección de búsqueda */
+.search-section {
+  margin-bottom: 2rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 30px;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  background-color: #fff;
+}
+
+.hero-section {
+  margin-bottom: 3rem;
+}
+
+.services-section {
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+}
+
+.services-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.clickable-title {
+  cursor: pointer;
+  transition: color 0.3s;
+  display: inline-block;
+}
+
+.clickable-title:hover {
+  color: #007bff;
+}
+
+.clickable-title::after {
+  content: " ";
+  font-size: 1rem;
+  opacity: 0.7;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .services-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Hacer que las tarjetas de servicio sean clickeables */
+.services-grid > div {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.services-grid > div:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para la sección de proveedores */
+.providers-section {
+  margin: 3rem 0;
+  min-height: 300px;
+}
+
+.providers-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.providers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Hacer que las tarjetas de proveedores sean clickeables */
+.providers-grid > div {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.providers-grid > div:hover {
+  transform: translateY(-5px);
+}
+
+.select-service-message,
+.no-providers-message,
+.loading-providers {
+  text-align: center;
+  padding: 3rem;
+  color: #6c757d;
+  font-style: italic;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.loading-providers {
+  font-style: normal;
+  color: #333;
+}
+
+.connect-wallet-section {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.connect-wallet-section p {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.connect-wallet-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connect-wallet-btn:hover {
+  background-color: #0069d9;
+}
+
+.work-with-us-banner {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.work-with-us-link {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #28a745;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.work-with-us-link:hover {
+  background-color: #218838;
+}
+
+.nearby-services-section {
+  margin-bottom: 3rem;
+}
+
+.nearby-services-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.nearby-services-container {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nearby-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.no-services-message {
+  text-align: center;
+  padding: 2rem;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.connect-prompt {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.connect-prompt p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Estilos para la sección de información de wallet */
+.wallet-info-section {
+  margin: 4rem 0;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.wallet-info-section h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.wallet-info-container {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.wallet-info-text {
+  flex: 1;
+}
+
+.wallet-info-text h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.wallet-info-text p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.wallet-steps-home {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.wallet-step-home {
+  display: flex;
+  align-items: flex-start;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s;
+}
+
+.wallet-step-home:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 2rem;
+  margin-right: 1.5rem;
+}
+
+.step-content h5 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+  color: #333;
+}
+
+.step-content p {
+  margin: 0;
+  color: #666;
+}
+
+.wallet-cta {
+  background-color: #e9ecef;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.wallet-cta p {
+  margin-bottom: 1rem;
+}
+
+.wallet-link {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #007bff;
+  color: white !important;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.wallet-link:hover {
+  background-color: #0069d9;
+  color: white !important;
+}
+
+.wallet-info-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wallet-info-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 992px) {
+  .wallet-info-container {
+    flex-direction: column;
+  }
+  
+  .wallet-info-image {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+}
